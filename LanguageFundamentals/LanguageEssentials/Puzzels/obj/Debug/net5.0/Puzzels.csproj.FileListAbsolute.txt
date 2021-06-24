@@ -1,0 +1,16 @@
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/bin/Debug/net5.0/Puzzels
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/bin/Debug/net5.0/Puzzels.deps.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/bin/Debug/net5.0/Puzzels.runtimeconfig.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/bin/Debug/net5.0/Puzzels.runtimeconfig.dev.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/bin/Debug/net5.0/Puzzels.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/bin/Debug/net5.0/ref/Puzzels.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/bin/Debug/net5.0/Puzzels.pdb
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/obj/Debug/net5.0/Puzzels.csproj.AssemblyReference.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/obj/Debug/net5.0/Puzzels.GeneratedMSBuildEditorConfig.editorconfig
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/obj/Debug/net5.0/Puzzels.AssemblyInfoInputs.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/obj/Debug/net5.0/Puzzels.AssemblyInfo.cs
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/obj/Debug/net5.0/Puzzels.csproj.CoreCompileInputs.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/obj/Debug/net5.0/Puzzels.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/obj/Debug/net5.0/ref/Puzzels.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/obj/Debug/net5.0/Puzzels.pdb
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Puzzels/obj/Debug/net5.0/Puzzels.genruntimeconfig.cache

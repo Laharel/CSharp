@@ -1,0 +1,11 @@
+5.0.301
+
+The template "Console Application" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on /media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/HellodotNet.csproj...
+  Determining projects to restore...
+  Restored /media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/HellodotNet.csproj (in 50 ms).
+Restore succeeded.
+
+Hello World!

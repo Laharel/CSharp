@@ -1,0 +1,16 @@
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/obj/Debug/net5.0/Basic13.csproj.AssemblyReference.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/obj/Debug/net5.0/Basic13.GeneratedMSBuildEditorConfig.editorconfig
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/obj/Debug/net5.0/Basic13.AssemblyInfoInputs.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/obj/Debug/net5.0/Basic13.AssemblyInfo.cs
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/obj/Debug/net5.0/Basic13.csproj.CoreCompileInputs.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/bin/Debug/net5.0/Basic13
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/bin/Debug/net5.0/Basic13.deps.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/bin/Debug/net5.0/Basic13.runtimeconfig.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/bin/Debug/net5.0/Basic13.runtimeconfig.dev.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/bin/Debug/net5.0/Basic13.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/bin/Debug/net5.0/ref/Basic13.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/bin/Debug/net5.0/Basic13.pdb
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/obj/Debug/net5.0/Basic13.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/obj/Debug/net5.0/ref/Basic13.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/obj/Debug/net5.0/Basic13.pdb
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/Basic13/obj/Debug/net5.0/Basic13.genruntimeconfig.cache

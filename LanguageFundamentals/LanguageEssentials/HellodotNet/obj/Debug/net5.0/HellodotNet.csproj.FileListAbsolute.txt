@@ -1,0 +1,16 @@
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/bin/Debug/net5.0/HellodotNet
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/bin/Debug/net5.0/HellodotNet.deps.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/bin/Debug/net5.0/HellodotNet.runtimeconfig.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/bin/Debug/net5.0/HellodotNet.runtimeconfig.dev.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/bin/Debug/net5.0/HellodotNet.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/bin/Debug/net5.0/ref/HellodotNet.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/bin/Debug/net5.0/HellodotNet.pdb
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/obj/Debug/net5.0/HellodotNet.csproj.AssemblyReference.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/obj/Debug/net5.0/HellodotNet.GeneratedMSBuildEditorConfig.editorconfig
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/obj/Debug/net5.0/HellodotNet.AssemblyInfoInputs.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/obj/Debug/net5.0/HellodotNet.AssemblyInfo.cs
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/obj/Debug/net5.0/HellodotNet.csproj.CoreCompileInputs.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/obj/Debug/net5.0/HellodotNet.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/obj/Debug/net5.0/ref/HellodotNet.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/obj/Debug/net5.0/HellodotNet.pdb
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/HellodotNet/obj/Debug/net5.0/HellodotNet.genruntimeconfig.cache

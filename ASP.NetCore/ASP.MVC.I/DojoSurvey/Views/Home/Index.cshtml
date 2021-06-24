@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center" >
+    <form action="results" method="post" class="p-5 border border-dark w-50" >
+        <div>
+            <label for="name">Your Name:</label>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <label for="location">Dojo Location:</label>
+            <select name="location" class="form-select" aria-label="Default select example" >
+                <<option style="display:none"> -- select an option -- </option>
+                <option value="Arlington">Arlington</option>
+                <option value="Berkeley">Berkeley</option>
+                <option value="Boise">Boise</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Dallas">Dallas</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Tulsa">Tulsa</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="San Jose">San Jose</option>
+                <option value="Orange County">Orange County</option>
+                <option value="Online">Online</option>
+            </select>
+        </div>
+        <div>
+            <label for="language">Favorite Language:</label>
+            <select name="language" class="form-select" aria-label="Default select example">
+                <<option style="display:none"> -- select an option -- </option>
+                <option value="C#">C#</option>
+                <option value="Python">Python</option>
+                <option value="Ruby">Ruby</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="comments" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

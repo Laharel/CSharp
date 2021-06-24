@@ -1,0 +1,51 @@
+img{
+    width: 200px;
+    height: 200px;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+}
+.rform{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+}
+.lform{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mid{
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 600px;
+    height: 200px;
+    margin: 20px 0;
+}
+.left{
+    margin: 0 20px;
+}
+.desc{
+    width: 350;
+}

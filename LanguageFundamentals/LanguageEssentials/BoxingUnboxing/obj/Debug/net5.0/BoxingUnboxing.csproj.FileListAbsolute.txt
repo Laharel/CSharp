@@ -1,0 +1,16 @@
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/bin/Debug/net5.0/BoxingUnboxing
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/bin/Debug/net5.0/BoxingUnboxing.deps.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/bin/Debug/net5.0/BoxingUnboxing.runtimeconfig.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/bin/Debug/net5.0/BoxingUnboxing.runtimeconfig.dev.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/bin/Debug/net5.0/BoxingUnboxing.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/bin/Debug/net5.0/ref/BoxingUnboxing.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/bin/Debug/net5.0/BoxingUnboxing.pdb
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/obj/Debug/net5.0/BoxingUnboxing.csproj.AssemblyReference.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/obj/Debug/net5.0/BoxingUnboxing.GeneratedMSBuildEditorConfig.editorconfig
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/obj/Debug/net5.0/BoxingUnboxing.AssemblyInfoInputs.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/obj/Debug/net5.0/BoxingUnboxing.AssemblyInfo.cs
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/obj/Debug/net5.0/BoxingUnboxing.csproj.CoreCompileInputs.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/obj/Debug/net5.0/BoxingUnboxing.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/obj/Debug/net5.0/ref/BoxingUnboxing.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/obj/Debug/net5.0/BoxingUnboxing.pdb
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/BoxingUnboxing/obj/Debug/net5.0/BoxingUnboxing.genruntimeconfig.cache

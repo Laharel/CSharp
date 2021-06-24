@@ -1,0 +1,16 @@
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/bin/Debug/net5.0/Fundementals
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/bin/Debug/net5.0/Fundementals.deps.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/bin/Debug/net5.0/Fundementals.runtimeconfig.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/bin/Debug/net5.0/Fundementals.runtimeconfig.dev.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/bin/Debug/net5.0/Fundementals.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/bin/Debug/net5.0/ref/Fundementals.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/bin/Debug/net5.0/Fundementals.pdb
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/obj/Debug/net5.0/Fundementals.csproj.AssemblyReference.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/obj/Debug/net5.0/Fundementals.GeneratedMSBuildEditorConfig.editorconfig
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/obj/Debug/net5.0/Fundementals.AssemblyInfoInputs.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/obj/Debug/net5.0/Fundementals.AssemblyInfo.cs
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/obj/Debug/net5.0/Fundementals.csproj.CoreCompileInputs.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/obj/Debug/net5.0/Fundementals.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/obj/Debug/net5.0/ref/Fundementals.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/obj/Debug/net5.0/Fundementals.pdb
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageEssentials/Fundementals/obj/Debug/net5.0/Fundementals.genruntimeconfig.cache

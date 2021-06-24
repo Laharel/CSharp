@@ -1,0 +1,9 @@
+@model List<User>
+
+<div class="text-center">
+    <h2>Here are some users!</h2>
+    @foreach(User item in Model){
+        <p>@item.FirstName @if(item.LastName!=null){@item.LastName}
+             </p>
+    }
+</div>

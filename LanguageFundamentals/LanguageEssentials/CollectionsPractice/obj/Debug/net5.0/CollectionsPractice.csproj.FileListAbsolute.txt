@@ -1,0 +1,16 @@
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/bin/Debug/net5.0/CollectionsPractice
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/bin/Debug/net5.0/CollectionsPractice.deps.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/bin/Debug/net5.0/CollectionsPractice.runtimeconfig.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/bin/Debug/net5.0/CollectionsPractice.runtimeconfig.dev.json
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/bin/Debug/net5.0/CollectionsPractice.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/bin/Debug/net5.0/ref/CollectionsPractice.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/bin/Debug/net5.0/CollectionsPractice.pdb
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/obj/Debug/net5.0/CollectionsPractice.csproj.AssemblyReference.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/obj/Debug/net5.0/CollectionsPractice.GeneratedMSBuildEditorConfig.editorconfig
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/obj/Debug/net5.0/CollectionsPractice.AssemblyInfoInputs.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/obj/Debug/net5.0/CollectionsPractice.AssemblyInfo.cs
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/obj/Debug/net5.0/CollectionsPractice.csproj.CoreCompileInputs.cache
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/obj/Debug/net5.0/CollectionsPractice.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/obj/Debug/net5.0/ref/CollectionsPractice.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/obj/Debug/net5.0/CollectionsPractice.pdb
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/LanguageFundamentals/LanguageEssentials/CollectionsPractice/obj/Debug/net5.0/CollectionsPractice.genruntimeconfig.cache
