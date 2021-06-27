@@ -25,8 +25,14 @@ namespace DojoSurvey.Controllers
         [HttpPost("Results")]
         public ViewResult Results(Survey survey)
         {
-           
+            if(ModelState.IsValid)
+            {
             return View(survey);
+            }
+            else
+            {
+                return View("Index");
+            }
         }
         [HttpGet("privacy")]
         public IActionResult Privacy()

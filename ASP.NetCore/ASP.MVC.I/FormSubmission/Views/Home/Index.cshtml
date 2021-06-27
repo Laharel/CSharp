@@ -7,29 +7,39 @@
     <h1 class="display-4">Enter Your information</h1>
     <form asp-action="Result" asp-controller="Home" method="post">
         <div>
-        <span asp-validation-for="fname"></span>
-        <label asp-for="fname"></label>
-        <input asp-for="fname">    
+            <div>
+                <span class = "text-danger" asp-validation-for="fname"></span>
+            </div>
+            <label asp-for="fname"></label>
+            <input asp-for="fname">    
         </div>
         <div>
-        <span asp-validation-for="lname"></span>
-        <label asp-for="lname"></label>
-        <input asp-for="lname">    
+            <div>
+                <span class = "text-danger" asp-validation-for="lname"></span>
+            </div>
+            <label asp-for="lname"></label>
+            <input asp-for="lname">    
         </div>
         <div>
-        <span asp-validation-for="age"></span>
-        <label asp-for="age"></label>
-        <input asp-for="age">    
+            <div>
+                <span class = "text-danger" asp-validation-for="age"></span>
+            </div>
+            <label asp-for="age"></label>
+            <input asp-for="age">    
         </div>
         <div>
-        <span asp-validation-for="email"></span>
-        <label asp-for="email"></label>
-        <input asp-for="email">
+            <div>
+                <span class = "text-danger" asp-validation-for="email"></span>
+            </div>
+            <label asp-for="email"></label>
+            <input asp-for="email">
         </div>
         <div>
-        <span asp-validation-for="password"></span>
-        <label asp-for="password"></label>
-        <input asp-for="password">
+            <div>
+                <span class = "text-danger" asp-validation-for="password"></span>
+            </div>
+            <label asp-for="password"></label>
+            <input asp-for="password">
         </div>
         <button type="submit">Submit</button>
     </form>

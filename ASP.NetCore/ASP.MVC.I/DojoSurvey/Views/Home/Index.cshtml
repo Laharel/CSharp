@@ -1,17 +1,24 @@
-﻿@{
+﻿@model Survey
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center" >
-    <form action="results" method="post" class="p-5 border border-dark w-50" >
+    <form asp-action="Results" asp-controller="Home" method="post" class="p-5 border border-dark w-50" >
         <div>
-            <label for="name">Your Name:</label>
-            <input type="text" name="name">
+            <div>
+                <span class = "text-danger" asp-validation-for="name"></span>
+            </div>
+            <label asp-for="name"></label>
+            <input asp-for="name">  
         </div>
         <div>
-            <label for="location">Dojo Location:</label>
-            <select name="location" class="form-select" aria-label="Default select example" >
-                <<option style="display:none"> -- select an option -- </option>
+            <div>
+                <span class = "text-danger" asp-validation-for="location"></span>
+            </div>
+            <label asp-for="location"></label>
+            <select asp-for="location" class="form-select" aria-label="Default select example" >
+                <option style="display:none" label=" "></option>
                 <option value="Arlington">Arlington</option>
                 <option value="Berkeley">Berkeley</option>
                 <option value="Boise">Boise</option>
@@ -26,9 +33,12 @@
             </select>
         </div>
         <div>
-            <label for="language">Favorite Language:</label>
-            <select name="language" class="form-select" aria-label="Default select example">
-                <<option style="display:none"> -- select an option -- </option>
+            <div>
+                <span class = "text-danger" asp-validation-for="language"></span>
+            </div>
+            <label asp-for="language"></label>
+            <select asp-for="language" class="form-select" aria-label="Default select example">
+                <option  style="display:none" label=" "></option>
                 <option value="C#">C#</option>
                 <option value="Python">Python</option>
                 <option value="Ruby">Ruby</option>
@@ -37,7 +47,10 @@
             </select>
         </div>
         <div>
-            <textarea name="comment" cols="30" rows="10"></textarea>
+            <div>
+                <span class = "text-danger" asp-validation-for="comment"></span>
+            </div>
+            <textarea asp-for="comment" cols="30" rows="10"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
