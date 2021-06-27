@@ -23,13 +23,10 @@ namespace DojoSurvey.Controllers
             return View();
         }
         [HttpPost("Results")]
-        public ViewResult Results(string name,string location,string language,string comments)
+        public ViewResult Results(Survey survey)
         {
-            ViewBag.name =name;
-            ViewBag.location =location;
-            ViewBag.language =language;
-            ViewBag.comments =comments;
-            return View();
+           
+            return View(survey);
         }
         [HttpGet("privacy")]
         public IActionResult Privacy()
