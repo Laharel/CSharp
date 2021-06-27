@@ -1,0 +1,41 @@
+@model Registration
+<h1>Register</h1>
+<form asp-action="Registration" asp-controller="Home" method="post" >
+    <div>
+        <div>
+            <span class = "text-danger" asp-validation-for="fname"></span>
+        </div>
+        <label asp-for="fname"></label>
+        <input asp-for="fname">
+    </div>
+    <div>
+        <div>
+            <span class = "text-danger" asp-validation-for="lname"></span>
+        </div>
+        <label asp-for="lname"></label>
+        <input asp-for="lname">
+    </div>
+        <div>
+            <span class = "text-danger" asp-validation-for="email"></span>
+        </div>
+        <label asp-for="email"></label>
+        <input asp-for="email">
+    </div>
+    <div>
+        <div>
+            <span class = "text-danger" asp-validation-for="password"></span>
+        </div>
+        <label asp-for="password"></label>
+        <input asp-for="password">
+    </div>
+    <div>
+        <div>
+            <span class = "text-danger" asp-validation-for="cpwd"></span>
+        </div>
+        <label asp-for="cpwd"></label>
+        <input asp-for="cpwd">
+    </div>
+    <div>
+        <button type="submit">Sign up</button>
+    </div>
+</form>
