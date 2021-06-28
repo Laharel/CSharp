@@ -1,0 +1,53 @@
+@model Pet
+
+<div class="Pet-header">
+    <span>
+        <p>Fullness: @Model.Fullness </p>
+    </span>
+    <span>
+        <p>Happiness: @Model.Happiness</p>
+    </span>
+    <span>
+        <p>Energy: @Model.Energy</p>
+    </span>
+    <span>
+        <p>Meals: @Model.Meals</p>
+    </span>
+
+</div>
+
+<div class="Pet-body">
+    <p>@ViewBag.msg</p>
+</div>
+
+
+<div class="Pet-footer">
+    @{
+        if(ViewBag.Dead){
+            <form method="GET" asp-action="Index" asp-controller="Home">
+                <button>Restart</button>
+            </form>
+        } else if(ViewBag.Win){
+            <form method="GET" asp-action="Index" asp-controller="Home">
+                <button>Restart</button>
+            </form>
+        }
+        
+        else {
+            <form method="POST" asp-action="Feed" asp-controller="Home">
+                <button>Feed</button>
+            </form>
+            <form method="POST" asp-action="Play" asp-controller="Home">
+                <button>Play</button>
+            </form>
+            <form method="POST" asp-action="Work" asp-controller="Home">
+                <button>Work</button>
+            </form>
+            <form method="POST" asp-action="Sleep" asp-controller="Home">
+                <button>Sleep</button>
+            </form>
+        }
+    }
+
+
+</div>
