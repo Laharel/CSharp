@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "A Web Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to CRUDelicious</h1>
+</div>
+<div>
+    <h3>Check out some recent dishes!</h3>
+    <a asp-controller="Home" asp-action="New">Add a Dish</a>
+</div>
+
+<div>
+    @{
+        foreach (Dish u in ViewBag.AllDishes)
+        {
+            <p><a href="/@u.DishId" >@u.Name</a> by @u.Chef</p>
+        }
+    }
+</div>

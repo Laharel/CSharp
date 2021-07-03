@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using SimpleLoginRegistration.Models;
 
 namespace SimpleLoginRegistration
 {
@@ -24,6 +26,8 @@ namespace SimpleLoginRegistration
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            string connectionString = "server=localhost;userid=root;password=root;port=3306;database=Usersdb;SslMode=None";
+            services.AddDbContext<MyContext>(options =>options.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString))); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

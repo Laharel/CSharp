@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SportsORM.Models;
 
 
@@ -88,6 +89,31 @@ namespace SportsORM.Controllers
         [HttpGet("level_2")]
         public IActionResult Level2()
         {
+            // Teams
+            ViewBag.Atlantic = _context.Teams
+                .Where(l => l.CurrLeague.Name.Contains("Soccer"))
+                .ToList();
+            // players
+            ViewBag.Penguins = _context.Players
+                .Include(l => l.CurrentTeam.CurrentPlayers)
+                .Where(l => l.CurrentTeam.Location.Contains("Location") && l.CurrentTeam.TeamName.Contains("Penguins"))
+                .ToList();
+            ViewBag.Baseball = _context.Players
+                .Include(l => l.CurrentTeam.CurrentPlayers)
+                .Where(l => l.CurrentTeam.CurrLeague.Name.Contains("Collegiate"))
+                .ToList();
+            ViewBag.Lopez = _context.Players
+                .Include(l => l.CurrentTeam)
+                .Where(l => l.CurrentTeam.CurrLeague.Name.Contains("Amateur") && l.CurrentTeam.CurrLeague.Sport.Contains("Amateur") && l.FirstName.Contains("Lopez"))
+                .ToList();
+            ViewBag.Football = _context.Players
+                .Where(l => l.CurrentTeam.CurrLeague.Sport.Contains("Football"))
+                .ToList();
+            ViewBag.SophiaTeams = _context.Players
+                .Include(l => l.CurrentTeam.CurrentPlayers)
+                .Where(l => l.FirstName.Contains("Sophia"))
+                .ToList();
+                
             return View();
         }
 

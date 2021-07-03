@@ -1,4 +1,6 @@
+using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SimpleLoginRegistration.Models
 {
@@ -20,15 +22,18 @@ namespace SimpleLoginRegistration.Models
         public string email{get;set;}
 
         [Required]
-        [MinLength(8)]
+        [MinLength(8,ErrorMessage ="Password must be 8 characters or longer!")]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string password{get;set;}
 
-        [Required]
+        [NotMapped]
         [Compare("password")]
         [DataType(DataType.Password)]
         [Display(Name = "Confirm Password")]
         public string cpwd{get;set;}
+
+        public DateTime CreatedAt {get;set;}
+        public DateTime UpdatedAt {get;set;}
     }
 }

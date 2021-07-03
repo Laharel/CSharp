@@ -1,0 +1,22 @@
+@model Dish
+
+@{
+    ViewData["Title"] = "A Web Page";
+}
+
+<div>
+    <a asp-action="Index" asp-controller="Home">Home</a>
+</div>
+<div class="text-center">
+    <h1 class="display-4">@Model.Name</h1>
+    <h3 class="display-4">@Model.Chef</h3>
+</div>
+<div>
+    <p>@Model.Description</p>
+    <p>Calories : @Model.Calories</p>
+    <p>Tastiness : @Model.Tastiness</p>
+</div>
+<div>
+    <button type="submit"><a asp-action="Delete">Delete</a></button>
+    <button type="submit"><a asp-action="Edit">Edit</a></button>
+</div>
