@@ -6,6 +6,8 @@ namespace SimpleLoginRegistration.Models
 {
     public class Registration
     {
+        public int Registrationid{get;set;}
+
         [Required]
         [MinLength(2)]
         [Display(Name = "First Name")]

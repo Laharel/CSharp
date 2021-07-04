@@ -6,6 +6,8 @@ namespace SimpleLoginRegistration.Models
     public class Login
     {
 
+        public int LoginId {get;set;}
+        
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]

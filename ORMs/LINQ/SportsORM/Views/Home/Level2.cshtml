@@ -165,12 +165,35 @@
                     <th>Last Name</th>
                     <th>League</th>
                 </tr>
-                @foreach(var l in ViewBag.SophiaTeams)
+                @foreach(var l in ViewBag.SophiaLeagues)
                 {
                     <tr>
                         <td>@l.FirstName</td>
                         <td>@l.LastName</td>
                         <td>@l.CurrentTeam.CurrLeague.Name</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-6" id="8">
+    <div class="card">
+        <div class="card-body">
+            <a href="#Top"><h3>Everyone with the Last Name Flores who DOESN'T currently play for the Washington Roughriders</h3></a>
+            <table class="table table-striped">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Team</th>
+                </tr>
+                @foreach(var l in ViewBag.Flores)
+                {
+                    <tr>
+                        <td>@l.FirstName</td>
+                        <td>@l.LastName</td>
+                        <td>@l.CurrentTeam.TeamName</td>
                     </tr>
                 }
             </table>

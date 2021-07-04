@@ -91,28 +91,30 @@ namespace SportsORM.Controllers
         {
             // Teams
             ViewBag.Atlantic = _context.Teams
-                .Where(l => l.CurrLeague.Name.Contains("Soccer"))
-                .ToList();
+                .Include(l => l.CurrLeague)
+                .Where(l => l.CurrLeague.Name.Contains("Soccer"));
             // players
             ViewBag.Penguins = _context.Players
                 .Include(l => l.CurrentTeam.CurrentPlayers)
-                .Where(l => l.CurrentTeam.Location.Contains("Location") && l.CurrentTeam.TeamName.Contains("Penguins"))
-                .ToList();
+                .Where(l => l.CurrentTeam.Location.Contains("Location") && l.CurrentTeam.TeamName.Contains("Penguins"));
             ViewBag.Baseball = _context.Players
                 .Include(l => l.CurrentTeam.CurrentPlayers)
-                .Where(l => l.CurrentTeam.CurrLeague.Name.Contains("Collegiate"))
-                .ToList();
+                .Where(l => l.CurrentTeam.CurrLeague.Name.Contains("Collegiate"));
             ViewBag.Lopez = _context.Players
                 .Include(l => l.CurrentTeam)
-                .Where(l => l.CurrentTeam.CurrLeague.Name.Contains("Amateur") && l.CurrentTeam.CurrLeague.Sport.Contains("Amateur") && l.FirstName.Contains("Lopez"))
-                .ToList();
+                .Where(l => l.CurrentTeam.CurrLeague.Name.Contains("Amateur") && l.CurrentTeam.CurrLeague.Sport.Contains("Football") && l.FirstName.Contains("Lopez"));
             ViewBag.Football = _context.Players
-                .Where(l => l.CurrentTeam.CurrLeague.Sport.Contains("Football"))
-                .ToList();
+                .Include(l => l.CurrentTeam)
+                .Where(l => l.CurrentTeam.CurrLeague.Sport.Contains("Football"));
             ViewBag.SophiaTeams = _context.Players
                 .Include(l => l.CurrentTeam.CurrentPlayers)
-                .Where(l => l.FirstName.Contains("Sophia"))
-                .ToList();
+                .Where(l => l.FirstName.Contains("Sophia"));
+            ViewBag.SophiaLeagues = _context.Players
+                .Include(l => l.CurrentTeam.CurrLeague)
+                .Where(l => l.FirstName.Contains("Sophia"));
+            ViewBag.Flores = _context.Players
+                .Include(l => l.CurrentTeam)
+                .Where(l => l.LastName.Contains("Flores") && !l.CurrentTeam.TeamName.Contains("Washington Roughriders"));
                 
             return View();
         }

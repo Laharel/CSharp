@@ -41,3 +41,12 @@
 /media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ASP.NetCore/ASP.MVC.II/SimpleLoginRegistration/obj/Debug/net5.0/SimpleLoginRegistration.pdb
 /media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ASP.NetCore/ASP.MVC.II/SimpleLoginRegistration/obj/Debug/net5.0/SimpleLoginRegistration.genruntimeconfig.cache
 /media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ASP.NetCore/ASP.MVC.II/SimpleLoginRegistration/obj/Debug/net5.0/SimpleLoginRegistration.csproj.CopyComplete
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ASP.NetCore/ASP.MVC.II/SimpleLoginRegistration/bin/Debug/net5.0/Humanizer.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ASP.NetCore/ASP.MVC.II/SimpleLoginRegistration/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ASP.NetCore/ASP.MVC.II/SimpleLoginRegistration/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ASP.NetCore/ASP.MVC.II/SimpleLoginRegistration/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Design.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ASP.NetCore/ASP.MVC.II/SimpleLoginRegistration/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ASP.NetCore/ASP.MVC.II/SimpleLoginRegistration/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ASP.NetCore/ASP.MVC.II/SimpleLoginRegistration/bin/Debug/net5.0/MySqlConnector.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ASP.NetCore/ASP.MVC.II/SimpleLoginRegistration/bin/Debug/net5.0/Pomelo.EntityFrameworkCore.MySql.dll
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ASP.NetCore/ASP.MVC.II/SimpleLoginRegistration/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
