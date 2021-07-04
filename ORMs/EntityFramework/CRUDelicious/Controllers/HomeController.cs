@@ -23,68 +23,138 @@ namespace CRUDelicious.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
-            List<Dish> AllDishes = dbcontext.Dishes.ToList();
-            ViewBag.AllDishes = AllDishes;
+            ViewBag.Chefs = dbcontext.Chefs.Include(l => l.Dishes);
             return View();
         }
-        [HttpGet("/new")]
-        public IActionResult New()
+        [HttpGet("/Chef/new")]
+        public IActionResult NewChef()
         {
             return View();
         }
-        [HttpPost("/new")]
-        public IActionResult Create(Dish newDish)
+        [HttpPost("/Chef/new")]
+        public IActionResult CreateChef(Chef newChef)
         {
             if(ModelState.IsValid)
             {
-                dbcontext.Dishes.Add(newDish);
+                newChef.Age = DateTime.Today.Year - newChef.DoB.Year;
+                dbcontext.Chefs.Add(newChef);
                 dbcontext.SaveChanges();
                 return RedirectToAction("Index");
             }
             else
             {
-                return View("New");
+                return View("NewChef");
             }
         }
-        [HttpGet("/{id}")]
-        public IActionResult Details(int id)
+        [HttpGet("/Chef/{id}")]
+        public IActionResult ChefDetails(int id)
         {
-            Dish oneDish=dbcontext.Dishes.FirstOrDefault(p => p.DishId== id);
-            return View(oneDish);
+            
+            Chef oneChef=dbcontext.Chefs.FirstOrDefault(l => l.ChefId== id);
+            return View(oneChef);
         }
-        [HttpGet("/{id}/Delete")]
-        public IActionResult Delete(int id)
+        [HttpGet("/Chef/{id}/delete")]
+        public IActionResult DeleteChef(int id)
         {
-            Dish oneDish=dbcontext.Dishes.SingleOrDefault(p => p.DishId== id);
-            dbcontext.Dishes.Remove(oneDish);
+            Chef oneChef=dbcontext.Chefs.SingleOrDefault(l => l.ChefId== id);
+            dbcontext.Chefs.Remove(oneChef);
             dbcontext.SaveChanges();
             return RedirectToAction("Index");
         }
-        [HttpGet("/{id}/edit")]
-        public IActionResult Edit(int id)
+        [HttpGet("/Chef/{id}/edit")]
+        public IActionResult EditChef(int id)
         {
-            Dish oneDish=dbcontext.Dishes.FirstOrDefault(p => p.DishId== id);
-            return View(oneDish);
+            Chef oneChef=dbcontext.Chefs.FirstOrDefault(l=> l.ChefId== id);
+            return View(oneChef);
         }
-        [HttpPost("/{id}/edit")]
-        public IActionResult Updated(Dish updated,int id)
+        [HttpPost("/Chef/{id}/edit")]
+        public IActionResult UpdatedChef(Chef updated,int id)
         {
-            Dish oneDish=dbcontext.Dishes.FirstOrDefault(p => p.DishId== id);
+            Chef oneChef=dbcontext.Chefs.FirstOrDefault(l => l.ChefId== id);
             if(ModelState.IsValid)
             {
-                oneDish.Name = updated.Name;
-                oneDish.Chef = updated.Chef;
-                oneDish.Tastiness = updated.Tastiness;
-                oneDish.Calories = updated.Calories;
-                oneDish.Description = updated.Description;
-                oneDish.UpdatedAt = DateTime.Now;
+                oneChef.FirstName = updated.FirstName;
+                oneChef.LastName = updated.LastName;
+                oneChef.DoB = updated.DoB;
+                oneChef.Age = DateTime.Today.Year - updated.DoB.Year;;
+                oneChef.UpdatedAt = DateTime.Now;
                 
                 dbcontext.SaveChanges();
                 return RedirectToAction("Index");
             }
             else
             {
-                return View("Edit");
+                return View("EditChef");
+            }
+        }
+        [HttpGet("/Dishes")]
+        public IActionResult Dishes()
+        {
+            ViewBag.Dishes = dbcontext.Dishes.Include(l => l.Cook);
+            return View();
+        }
+        [HttpGet("/Dish/new")]
+        public IActionResult NewDish()
+        {
+            ViewBag.Chefs = dbcontext.Chefs;
+            return View();
+        }
+        [HttpPost("/Dish/new")]
+        public IActionResult CreateDish(Dish newDish)
+        {
+            if(ModelState.IsValid)
+            {
+                newDish.Cook=dbcontext.Chefs.FirstOrDefault(l => l.ChefId==newDish.ChefId);
+                dbcontext.Dishes.Add(newDish);
+                dbcontext.SaveChanges();
+                return RedirectToAction("Dishes");
+            }
+            else
+            {
+                return View("NewDish");
+            }
+        }
+        [HttpGet("/Dish/{id}")]
+        public IActionResult DishDetails(int id)
+        {
+            Dish oneDish=dbcontext.Dishes.FirstOrDefault(l => l.DishId== id);
+            return View(oneDish);
+        }
+        [HttpGet("/Dish/{id}/delete")]
+        public IActionResult DeleteDish(int id)
+        {
+            Dish oneDish=dbcontext.Dishes.SingleOrDefault(l => l.DishId== id);
+            dbcontext.Dishes.Remove(oneDish);
+            dbcontext.SaveChanges();
+            return RedirectToAction("Dishes");
+        }
+        [HttpGet("/Dish/{id}/edit")]
+        public IActionResult EditDish(int id)
+        {
+            ViewBag.Chefs = dbcontext.Chefs;
+            Dish oneDish=dbcontext.Dishes.FirstOrDefault(l => l.DishId== id);
+            return View(oneDish);
+        }
+        [HttpPost("/Dish/{id}/edit")]
+        public IActionResult UpdatedDish(Dish updated,int id)
+        {
+            Dish oneDish=dbcontext.Dishes.FirstOrDefault(l => l.DishId== id);
+            if(ModelState.IsValid)
+            {
+                oneDish.Name = updated.Name;
+                oneDish.ChefId = updated.ChefId;
+                oneDish.Cook = dbcontext.Chefs.FirstOrDefault(l => l.ChefId==updated.ChefId);
+                oneDish.Tastiness = updated.Tastiness;
+                oneDish.Calories = updated.Calories;
+                oneDish.Description = updated.Description;
+                oneDish.UpdatedAt = DateTime.Now;
+                
+                dbcontext.SaveChanges();
+                return RedirectToAction("Dishes");
+            }
+            else
+            {
+                return View("EditDish");
             }
         }
         [HttpGet("/privacy")]

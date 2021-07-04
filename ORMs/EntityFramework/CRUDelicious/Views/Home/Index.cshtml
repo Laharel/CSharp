@@ -1,20 +1,31 @@
 ﻿@{
     ViewData["Title"] = "A Web Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome to CRUDelicious</h1>
+<div class="d-flex justify-content-around">
+    <div class="text-center">
+        <a asp-controller="Home" asp-action="Index">Chefs</a>
+        |
+        <a asp-controller="Home" asp-action="Dishes">Dishes</a>
+    </div>
+    <a asp-controller="Home" asp-action="NewChef" class="text-right">Add a Chef</a>
 </div>
 <div>
-    <h3>Check out some recent dishes!</h3>
-    <a asp-controller="Home" asp-action="New">Add a Dish</a>
-</div>
-
-<div>
-    @{
-        foreach (Dish u in ViewBag.AllDishes)
-        {
-            <p><a href="/@u.DishId" >@u.Name</a> by @u.Chef</p>
+    <h3>Check out our roster of Chefs!</h3>
+    <table class="table table-striped">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th># of Dishes</th>
+        </tr>
+        @{
+            foreach(Chef u in ViewBag.Chefs)
+            {
+            <tr>
+                <td><a href="/chef/@u.ChefId">@u.FirstName @u.LastName</a></td>
+                <td>@u.Age</td>
+                <td>@u.Dishes.Count</td>
+            </tr>
+            }
         }
-    }
+    </table>
 </div>

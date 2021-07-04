@@ -15619,18 +15619,28 @@
   "RootNamespace": "CRUDelicious",
   "Documents": [
     {
-      "FilePath": "/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/Views/Home/New.cshtml",
-      "TargetPath": "Views\\Home\\New.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/Views/Home/EditChef.cshtml",
+      "TargetPath": "Views\\Home\\EditChef.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/Views/Home/NewChef.cshtml",
+      "TargetPath": "Views\\Home\\NewChef.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/Views/Home/Dishes.cshtml",
+      "TargetPath": "Views\\Home\\Dishes.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15649,18 +15659,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/Views/Home/ChefDetails.cshtml",
+      "TargetPath": "Views\\Home\\ChefDetails.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/Views/Home/NewDish.cshtml",
+      "TargetPath": "Views\\Home\\NewDish.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/Views/Home/Edit.cshtml",
-      "TargetPath": "Views\\Home\\Edit.cshtml",
+      "FilePath": "/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/Views/Home/DishDetails.cshtml",
+      "TargetPath": "Views\\Home\\DishDetails.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/Views/Home/Details.cshtml",
-      "TargetPath": "Views\\Home\\Details.cshtml",
+      "FilePath": "/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/Views/Home/EditDish.cshtml",
+      "TargetPath": "Views\\Home\\EditDish.cshtml",
       "FileKind": "mvc"
     },
     {

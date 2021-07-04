@@ -47,6 +47,10 @@
 /media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/obj/Debug/net5.0/ref/CRUDelicious.dll
 /media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/obj/Debug/net5.0/CRUDelicious.pdb
 /media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/obj/Debug/net5.0/CRUDelicious.genruntimeconfig.cache
-/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/obj/Debug/net5.0/Razor/Views/Home/Details.cshtml.g.cs
-/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/obj/Debug/net5.0/Razor/Views/Home/Edit.cshtml.g.cs
-/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/obj/Debug/net5.0/Razor/Views/Home/New.cshtml.g.cs
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/obj/Debug/net5.0/Razor/Views/Home/ChefDetails.cshtml.g.cs
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/obj/Debug/net5.0/Razor/Views/Home/DishDetails.cshtml.g.cs
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/obj/Debug/net5.0/Razor/Views/Home/Dishes.cshtml.g.cs
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/obj/Debug/net5.0/Razor/Views/Home/EditChef.cshtml.g.cs
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/obj/Debug/net5.0/Razor/Views/Home/EditDish.cshtml.g.cs
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/obj/Debug/net5.0/Razor/Views/Home/NewChef.cshtml.g.cs
+/media/laharel/Laharel's/oldies/coding/CodingDojo/VS Code/C#/ORMs/EntityFramework/CRUDelicious/obj/Debug/net5.0/Razor/Views/Home/NewDish.cshtml.g.cs

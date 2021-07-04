@@ -25,9 +25,9 @@ namespace CRUDelicious
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews(options => options.EnableEndpointRouting=false);
-            
             string connectionString = "server=localhost;userid=root;password=root;port=3306;database=dishdb;SslMode=None";
-            services.AddDbContext<MyContext>(options =>options.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString))); 
+            services.AddDbContext<MyContext>(options =>options.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString)));
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,7 +42,7 @@ namespace CRUDelicious
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseAuthorization();
             app.UseMvc();
 

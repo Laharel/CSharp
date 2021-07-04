@@ -6,10 +6,11 @@
 
 <div>
     <a asp-action="Index" asp-controller="Home">Home</a>
+    <a asp-action="Dishes" asp-controller="Home">Dishes</a>
 </div>
 <div class="text-center">
     <h1 class="display-4">@Model.Name</h1>
-    <h3 class="display-4">@Model.Chef</h3>
+    <h3 class="display-4">@Model.Cook</h3>
 </div>
 <div>
     <p>@Model.Description</p>
@@ -17,6 +18,6 @@
     <p>Tastiness : @Model.Tastiness</p>
 </div>
 <div>
-    <button type="submit"><a asp-action="Delete">Delete</a></button>
-    <button type="submit"><a asp-action="Edit">Edit</a></button>
+    <button type="submit"><a asp-action="DeleteDish">Delete</a></button>
+    <button type="submit"><a asp-action="EditDish">Edit</a></button>
 </div>

@@ -1,7 +1,5 @@
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc.Rendering;
 namespace CRUDelicious.Models
 {
     public class Dish
@@ -9,12 +7,11 @@ namespace CRUDelicious.Models
         public int DishId{get;set;}
         
         [Required]
-        [MaxLength(45)]
+        [MaxLength(45,ErrorMessage ="Maximum Characters for Name is 45")]
         public string Name{get;set;}
         
-        [Required]
-        [MaxLength(45)]
-        public string Chef{get;set;}
+        public int ChefId{get;set;}
+        public Chef Cook{get;set;}
         
         [Required]
         [Range(1,5)]

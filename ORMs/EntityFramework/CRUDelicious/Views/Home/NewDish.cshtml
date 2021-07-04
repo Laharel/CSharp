@@ -4,34 +4,40 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Edit a Dish!</h1>
+    <h1 class="display-4">Add a new Dish!</h1>
 </div>
 <div>
     <a asp-action="Index" asp-controller="Home">Home</a>
+    <a asp-action="Dishes" asp-controller="Home">Dishes</a>
 </div>
 <div>
-    <form asp-action="Updated" asp-controller="Home" method="post">
+    <form asp-action="CreateDish" method="post">
         <div>
             <div>
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <label asp-for="Name"></label>
-            <input asp-for="Name" value=@Model.Name>
+            <input asp-for="Name">
         </div>
         <div>
-            <div>
-                <span asp-validation-for="Chef" class="text-danger"></span>
-            </div>
-            <label asp-for="Chef"></label>
-            <input asp-for="Chef" value=@Model.Chef>
+            <label asp-for="Cook"></label>
+            <select asp-for="ChefId"  class="form-select" aria-label="Default select example">
+                <option style="display:none" label=" "></option>
+                @{
+                    foreach (Chef cook in ViewBag.Chefs)
+                    {
+                        <option value=@cook.ChefId>@cook.FirstName @cook.LastName</option>
+                    }
+                }
+            </select>
         </div>
         <div>
             <div>
                 <span asp-validation-for="Tastiness" class="text-danger"></span>
             </div>
             <label asp-for="Tastiness"></label>
-            <select asp-for="Tastiness"  class="form-select" aria-label="Default select example" >
-                <option style="display:none" value=@Model.Tastiness>@Model.Tastiness</option>
+            <select asp-for="Tastiness"  class="form-select" aria-label="Default select example">
+                <option style="display:none" label=" "></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -44,15 +50,15 @@
                 <span asp-validation-for="Calories" class="text-danger"></span>
             </div>
             <label asp-for="Calories"></label>
-            <input asp-for="Calories" type="number" value=@Model.Calories>
+            <input asp-for="Calories" type="number">
         </div>
         <div>
             <div>
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <label asp-for="Description"></label>
-            <textarea asp-for="Description">@Model.Description</textarea>
+            <textarea asp-for="Description"></textarea>
         </div>
-        <button type="submit">Edit</button>
+        <button type="submit">Add Dish</button>
     </form>
 </div>
