@@ -18,6 +18,7 @@ namespace CRUDelicious.Models
         public int Tastiness{get;set;}
         
         [Required]
+        [Range(1,9999999)]
         public int Calories{get;set;}
 
         [Required]
