@@ -1,5 +1,4 @@
 @model Dish
-
 @{
     ViewData["Title"] = "A Web Page";
 }
@@ -10,7 +9,7 @@
 </div>
 <div class="text-center">
     <h1 class="display-4">@Model.Name</h1>
-    <h3 class="display-4">@Model.Cook</h3>
+    <h3 class="display-4">@ViewBag.Chef.FirstName @ViewBag.Chef.LastName</h3>
 </div>
 <div>
     <p>@Model.Description</p>
@@ -18,6 +17,6 @@
     <p>Tastiness : @Model.Tastiness</p>
 </div>
 <div>
-    <button type="submit"><a asp-action="DeleteDish">Delete</a></button>
-    <button type="submit"><a asp-action="EditDish">Edit</a></button>
+    <button type="submit"><a asp-controller="Home" asp-action="DeleteDish" asp-route-id="@Model.DishId">Delete</a></button>
+    <button type="submit"><a asp-controller="Home" asp-action="EditDish" asp-route-id="@Model.DishId">Edit</a></button>
 </div>

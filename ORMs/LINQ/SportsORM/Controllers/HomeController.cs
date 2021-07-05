@@ -101,8 +101,8 @@ namespace SportsORM.Controllers
                 .Include(l => l.CurrentTeam.CurrentPlayers)
                 .Where(l => l.CurrentTeam.CurrLeague.Name.Contains("Collegiate"));
             ViewBag.Lopez = _context.Players
-                .Include(l => l.CurrentTeam)
-                .Where(l => l.CurrentTeam.CurrLeague.Name.Contains("Amateur") && l.CurrentTeam.CurrLeague.Sport.Contains("Football") && l.FirstName.Contains("Lopez"));
+                .Include(l => l.CurrentTeam.CurrLeague)
+                .Where(l => l.CurrentTeam.CurrLeague.Name.Contains("Amateur Football") && l.LastName.Contains("Lopez"));
             ViewBag.Football = _context.Players
                 .Include(l => l.CurrentTeam)
                 .Where(l => l.CurrentTeam.CurrLeague.Sport.Contains("Football"));
@@ -122,6 +122,11 @@ namespace SportsORM.Controllers
         [HttpGet("level_3")]
         public IActionResult Level3()
         {
+            ViewBag.Samuel = _context.PlayerTeams
+                .Include(l => l.PlayerOnTeam)
+                    .ThenInclude(l => l.AllTeams)
+                        .Where(l => l.PlayerOnTeam.LastName.Contains("Evans") && l.PlayerOnTeam.FirstName.Contains("Samuel"))
+                        .ToList();
             return View();
         }
 

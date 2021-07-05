@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
@@ -20,18 +18,18 @@ namespace CRUDelicious.Controllers
             _logger = logger;
             dbcontext = context;
         }
-        [HttpGet("")]
+        [HttpGet]
         public IActionResult Index()
         {
             ViewBag.Chefs = dbcontext.Chefs.Include(l => l.Dishes);
             return View();
         }
-        [HttpGet("/Chef/new")]
+        [HttpGet]
         public IActionResult NewChef()
         {
             return View();
         }
-        [HttpPost("/Chef/new")]
+        [HttpPost]
         public IActionResult CreateChef(Chef newChef)
         {
             if(ModelState.IsValid)
@@ -46,14 +44,14 @@ namespace CRUDelicious.Controllers
                 return View("NewChef");
             }
         }
-        [HttpGet("/Chef/{id}")]
+        [HttpGet]
         public IActionResult ChefDetails(int id)
         {
             
             Chef oneChef=dbcontext.Chefs.FirstOrDefault(l => l.ChefId== id);
             return View(oneChef);
         }
-        [HttpGet("/Chef/{id}/delete")]
+        [HttpGet]
         public IActionResult DeleteChef(int id)
         {
             Chef oneChef=dbcontext.Chefs.SingleOrDefault(l => l.ChefId== id);
@@ -61,13 +59,13 @@ namespace CRUDelicious.Controllers
             dbcontext.SaveChanges();
             return RedirectToAction("Index");
         }
-        [HttpGet("/Chef/{id}/edit")]
+        [HttpGet]
         public IActionResult EditChef(int id)
         {
             Chef oneChef=dbcontext.Chefs.FirstOrDefault(l=> l.ChefId== id);
             return View(oneChef);
         }
-        [HttpPost("/Chef/{id}/edit")]
+        [HttpPost]
         public IActionResult UpdatedChef(Chef updated,int id)
         {
             Chef oneChef=dbcontext.Chefs.FirstOrDefault(l => l.ChefId== id);
@@ -87,19 +85,19 @@ namespace CRUDelicious.Controllers
                 return View("EditChef");
             }
         }
-        [HttpGet("/Dishes")]
+        [HttpGet]
         public IActionResult Dishes()
         {
             ViewBag.Dishes = dbcontext.Dishes.Include(l => l.Cook);
             return View();
         }
-        [HttpGet("/Dish/new")]
+        [HttpGet]
         public IActionResult NewDish()
         {
             ViewBag.Chefs = dbcontext.Chefs;
             return View();
         }
-        [HttpPost("/Dish/new")]
+        [HttpPost]
         public IActionResult CreateDish(Dish newDish)
         {
             if(ModelState.IsValid)
@@ -114,13 +112,14 @@ namespace CRUDelicious.Controllers
                 return View("NewDish");
             }
         }
-        [HttpGet("/Dish/{id}")]
+        [HttpGet]
         public IActionResult DishDetails(int id)
         {
             Dish oneDish=dbcontext.Dishes.FirstOrDefault(l => l.DishId== id);
+            ViewBag.Chef = dbcontext.Chefs.FirstOrDefault(l => l.ChefId== oneDish.ChefId);
             return View(oneDish);
         }
-        [HttpGet("/Dish/{id}/delete")]
+        [HttpGet]
         public IActionResult DeleteDish(int id)
         {
             Dish oneDish=dbcontext.Dishes.SingleOrDefault(l => l.DishId== id);
@@ -128,14 +127,15 @@ namespace CRUDelicious.Controllers
             dbcontext.SaveChanges();
             return RedirectToAction("Dishes");
         }
-        [HttpGet("/Dish/{id}/edit")]
+        [HttpGet]
         public IActionResult EditDish(int id)
         {
-            ViewBag.Chefs = dbcontext.Chefs;
             Dish oneDish=dbcontext.Dishes.FirstOrDefault(l => l.DishId== id);
+            ViewBag.Chefs = dbcontext.Chefs;
+            ViewBag.Chef = dbcontext.Chefs.FirstOrDefault(l => l.ChefId== oneDish.ChefId);
             return View(oneDish);
         }
-        [HttpPost("/Dish/{id}/edit")]
+        [HttpPost]
         public IActionResult UpdatedDish(Dish updated,int id)
         {
             Dish oneDish=dbcontext.Dishes.FirstOrDefault(l => l.DishId== id);
@@ -157,7 +157,7 @@ namespace CRUDelicious.Controllers
                 return View("EditDish");
             }
         }
-        [HttpGet("/privacy")]
+        [HttpGet]
         public IActionResult Privacy()
         {
             return View();

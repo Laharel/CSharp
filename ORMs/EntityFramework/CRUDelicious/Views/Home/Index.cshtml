@@ -21,7 +21,7 @@
             foreach(Chef u in ViewBag.Chefs)
             {
             <tr>
-                <td><a href="/chef/@u.ChefId">@u.FirstName @u.LastName</a></td>
+                <td><a asp-controller="Home" asp-action="ChefDetails" asp-route-id="@u.ChefId">@u.FirstName @u.LastName</a></td>
                 <td>@u.Age</td>
                 <td>@u.Dishes.Count</td>
             </tr>

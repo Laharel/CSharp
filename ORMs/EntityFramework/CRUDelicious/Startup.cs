@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -24,10 +20,9 @@ namespace CRUDelicious
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews(options => options.EnableEndpointRouting=false);
+            services.AddControllersWithViews();
             string connectionString = "server=localhost;userid=root;password=root;port=3306;database=dishdb;SslMode=None";
             services.AddDbContext<MyContext>(options =>options.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString)));
-            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,9 +37,16 @@ namespace CRUDelicious
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
-            app.UseSession();
+            app.UseRouting();
+
             app.UseAuthorization();
-            app.UseMvc();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
 
         }
     }

@@ -22,7 +22,7 @@
             foreach(Dish u in ViewBag.Dishes)
             {
             <tr>
-                <td><a href="/Dish/@u.DishId">@u.Name</a></td>
+                <td><a asp-controller="Home" asp-action="DishDetails" asp-route-id="@u.DishId">@u.Name</a></td>
                     <td>@u.Cook.FirstName @u.Cook.LastName</td>
                     <td>@u.Tastiness</td>
                     <td>@u.Calories</td>

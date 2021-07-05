@@ -22,7 +22,7 @@
         <div>
             <label asp-for="ChefId"></label>
             <select asp-for="ChefId"  class="form-select" aria-label="Default select example">
-                <option style="display:none" label=" ">@Model.Cook.FirstName @Model.Cook.LastName</option>
+                <option style="display:none" label=" ">@ViewBag.Chef.FirstName @ViewBag.Chef.LastName</option>
                 @{
                     foreach (Chef cook in ViewBag.Chefs)
                     {
