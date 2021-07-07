@@ -1,0 +1,59 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Register</h1>
+    <div>
+            @{
+            if(ViewBag.LoggedIn==true)
+            {
+                <a asp-controller="Home" asp-action="Logout">Logout</a>
+                <a asp-controller="Home" asp-action="Account" asp-route-id=@ViewBag.User.UserId>Account</a>
+            } 
+            else 
+            {
+                <form asp-controller="Home" asp-action="Create" method="post">
+                    <div>
+                        <div>
+                            <span asp-validation-for="fname"></span>
+                        </div>
+                        <label asp-for="fname"></label>
+                        <input asp-for="fname">
+                    </div>
+                    <div>
+                        <div>
+                            <span asp-validation-for="lname"></span>
+                        </div>
+                        <label asp-for="lname"></label>
+                        <input asp-for="lname">
+                    </div>
+                    <div>
+                        <div>
+                            <span asp-validation-for="Email"></span>
+                        </div>
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email">
+                    </div>
+                    <div>
+                        <div>
+                            <span asp-validation-for="Password"></span>
+                        </div>
+                        <label asp-for="Password"></label>
+                        <input asp-for="Password">
+                    </div>
+                    <div>
+                        <div>
+                            <span asp-validation-for="CP"></span>
+                        </div>
+                        <label asp-for="CP"></label>
+                        <input asp-for="CP">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <a asp-controller="Home" asp-action="LoginForm">Already Registered?</a>
+            }
+        }
+    </div>
+</div>

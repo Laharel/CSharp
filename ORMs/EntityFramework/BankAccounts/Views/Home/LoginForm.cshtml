@@ -1,0 +1,37 @@
+@model Login
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Login</h1>
+    <div>
+            @{
+            if(ViewBag.LoggedIn==true)
+            {
+                <a asp-controller="Home" asp-action="Logout">Logout</a>
+            } 
+            else 
+            {
+                <form asp-controller="Home" asp-action="Login" method="post">
+                    <div>
+                        <div>
+                            <span asp-validation-for="Email"></span>
+                        </div>
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email">
+                    </div>
+                    <div>
+                        <div>
+                            <span asp-validation-for="Password"></span>
+                        </div>
+                        <label asp-for="Password"></label>
+                        <input asp-for="Password">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <a asp-controller="Home" asp-action="Index">Need to Register?</a>
+            }
+        }
+    </div>
+</div>
