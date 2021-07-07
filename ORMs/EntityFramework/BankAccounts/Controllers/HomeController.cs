@@ -22,7 +22,7 @@ namespace BankAccounts.Controllers
             dbcontext = context;
             _logger = logger;
         }
-        [HttpGet]
+        [HttpGet("")]
         public IActionResult Index()
         {
             int? userId = HttpContext.Session.GetInt32("userId");
@@ -36,7 +36,7 @@ namespace BankAccounts.Controllers
             }
             return View();
         }
-        [HttpPost]
+        [HttpPost("")]
         public IActionResult Create(User user)
         {
             if(dbcontext.Users.Any(l => l.Email == user.Email))
@@ -51,7 +51,7 @@ namespace BankAccounts.Controllers
             HttpContext.Session.SetInt32("userId", user.UserId);
             return RedirectToAction("LoginForm");            
         }
-        [HttpGet]
+        [HttpGet("Login")]
         public IActionResult LoginForm()
         {
             int? userId = HttpContext.Session.GetInt32("userId");
@@ -60,7 +60,7 @@ namespace BankAccounts.Controllers
             }
             return View();
         }
-        [HttpPost]
+        [HttpPost("Login")]
         public IActionResult Login(Login submitted)
         {
             if(ModelState.IsValid)
@@ -86,46 +86,77 @@ namespace BankAccounts.Controllers
             }
             return View("LoginForm");
         }
-        [HttpGet]
+        [HttpGet("Account/{id}")]
         public IActionResult Account(int id)
         {
             int? userId = HttpContext.Session.GetInt32("userId");
+            string message = HttpContext.Session.GetString("message");
             if(userId != null){
+                ViewBag.LoggedIn = true;
                 Transaction trans=dbcontext.Transactions.FirstOrDefault(l=> l.UserId==id);
                 ViewBag.User=dbcontext.Users
                     .Include(u => u.Transactions)
                         .OrderByDescending(l => l.CreatedAt)
                             .FirstOrDefault(l => l.UserId==id);
+                if (message ==null)
+                {
+                    ViewBag.message="";
+                }
+                else
+                {
+                    ViewBag.message=message;
+                }
                 return View(trans);
             }
             else{
+                ViewBag.LoggedIn = false;
                 return RedirectToAction("LoginForm");
             }
         }
-        [HttpGet]
+        [HttpPost("Account/{id}")]
         public IActionResult Add(int id,Transaction newtrans)
         {
             int? userId = HttpContext.Session.GetInt32("userId");
             if(userId != null){
                 Transaction trans=dbcontext.Transactions.FirstOrDefault(l => l.UserId==id);
-                if(trans.Amount+newtrans.Amount>0)
+                User thisUser=dbcontext.Users
+                        .Include(u => u.Transactions)
+                            .OrderByDescending(l => l.CreatedAt)
+                                .FirstOrDefault(l => l.UserId==id);
+                if (thisUser.Transactions.Count == 0 )
                 {
+                    newtrans.UserId=id;
                     dbcontext.Transactions.Add(newtrans);
                     dbcontext.SaveChanges();
-                    trans.Amount+=newtrans.Amount;
                     return RedirectToAction("Account");
                 }
                 else
-                {
-                    ModelState.AddModelError("Amount", "Insufficient balance");
-                    return View("Account"); 
+                {   
+                    decimal sum=0;
+                    foreach (Transaction T in thisUser.Transactions)
+                    {
+                        sum+=T.Amount;
+                    }
+                    if(sum+newtrans.Amount>=0)
+                    {
+                        newtrans.UserId=id;
+                        dbcontext.Transactions.Add(newtrans);
+                        dbcontext.SaveChanges();
+                        return RedirectToAction("Account");
+                    }
+                    else
+                    {
+                        string message="Insufficient balance";
+                        HttpContext.Session.SetString("message", message);
+                        return RedirectToAction("Account"); 
+                    }
                 }
             }
             else{
                 return RedirectToAction("LoginForm");
             }
         }
-        [HttpGet]
+        [HttpGet("Logout")]
         public IActionResult Logout()
         {
             int? userId = HttpContext.Session.GetInt32("userId");

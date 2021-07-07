@@ -24,7 +24,7 @@ namespace BankAccounts
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddControllersWithViews(options =>options.EnableEndpointRouting=false);
             string connectionString = "server=localhost;userid=root;password=root;port=3306;database=Bankdb;SslMode=None";
             services.AddDbContext<MyContext>(options =>options.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString)));
             services.AddSession();
@@ -46,13 +46,13 @@ namespace BankAccounts
             app.UseRouting();
 
             app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
+            app.UseMvc();
+            // app.UseEndpoints(endpoints =>
+            // {
+            //     endpoints.MapControllerRoute(
+            //         name: "default",
+            //         pattern: "{controller=Home}/{action=Index}/{id?}");
+            // });
         }
     }
 }
